@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/terentev/projects/OOP/OOP/Lab1/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/ResLab1.dir/main.cpp.o -c /home/terentev/projects/OOP/OOP/Lab1/main.cpp",
+  "file": "/home/terentev/projects/OOP/OOP/Lab1/main.cpp",
+  "output": "CMakeFiles/ResLab1.dir/main.cpp.o"
+}
+]

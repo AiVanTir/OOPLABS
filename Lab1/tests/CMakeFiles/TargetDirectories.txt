@@ -1,0 +1,4 @@
+/home/terentev/projects/OOP/OOP/Lab1/tests/CMakeFiles/main_test.dir
+/home/terentev/projects/OOP/OOP/Lab1/tests/CMakeFiles/test.dir
+/home/terentev/projects/OOP/OOP/Lab1/tests/CMakeFiles/edit_cache.dir
+/home/terentev/projects/OOP/OOP/Lab1/tests/CMakeFiles/rebuild_cache.dir

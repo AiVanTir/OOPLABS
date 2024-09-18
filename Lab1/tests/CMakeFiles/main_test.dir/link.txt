@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/main_test.dir/test.cpp.o CMakeFiles/main_test.dir/home/terentev/projects/OOP/OOP/Lab1/src/modify.cpp.o -o main_test  /usr/local/lib/libgtest.a -lpthread 
