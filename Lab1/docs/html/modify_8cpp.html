@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lab1 Documentation: Файл src/modify.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Lab1 Documentation
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл modify.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &quot;modify.hpp&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для modify.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="modify_8cpp__incl.png" border="0" usemap="#asrc_2modify_8cpp" alt=""/></div>
+<map name="asrc_2modify_8cpp" id="asrc_2modify_8cpp">
+<area shape="rect" title=" " alt="" coords="213,5,328,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,85,104"/>
+<area shape="poly" title=" " alt="" coords="235,33,96,77,94,72,234,28"/>
+<area shape="rect" title=" " alt="" coords="109,79,168,104"/>
+<area shape="poly" title=" " alt="" coords="251,33,173,74,171,70,248,28"/>
+<area shape="rect" title=" " alt="" coords="193,79,255,104"/>
+<area shape="poly" title=" " alt="" coords="265,32,241,69,237,66,261,30"/>
+<area shape="rect" title=" " alt="" coords="280,79,355,104"/>
+<area shape="poly" title=" " alt="" coords="281,30,304,66,300,69,276,32"/>
+<area shape="rect" title=" " alt="" coords="379,79,445,104"/>
+<area shape="poly" title=" " alt="" coords="295,28,378,70,376,75,292,33"/>
+<area shape="rect" title=" " alt="" coords="469,79,563,104"/>
+<area shape="poly" title=" " alt="" coords="311,28,464,72,463,77,309,33"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:aa23e26efe13de19eb840b86069d8048a" id="r_aa23e26efe13de19eb840b86069d8048a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modify_8cpp.html#aa23e26efe13de19eb840b86069d8048a">CheckName</a> (const std::string &amp;Input)</td></tr>
+<tr class="memdesc:aa23e26efe13de19eb840b86069d8048a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для проверки строки на соответствие формату.  <br /></td></tr>
+<tr class="separator:aa23e26efe13de19eb840b86069d8048a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81e903fec340d93cdd62cac5ec131e00" id="r_a81e903fec340d93cdd62cac5ec131e00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modify_8cpp.html#a81e903fec340d93cdd62cac5ec131e00">CheckExpression</a> (const std::string &amp;Line, size_t EqualIndex, int LastInd)</td></tr>
+<tr class="memdesc:a81e903fec340d93cdd62cac5ec131e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для проверки строки на соответствие формату.  <br /></td></tr>
+<tr class="separator:a81e903fec340d93cdd62cac5ec131e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a444c4e0231eb613abc168eb292d36ca7" id="r_a444c4e0231eb613abc168eb292d36ca7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modify_8cpp.html#a444c4e0231eb613abc168eb292d36ca7">ConvertToVector</a> (const char *Input, size_t Size)</td></tr>
+<tr class="memdesc:a444c4e0231eb613abc168eb292d36ca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вариация перегрузки функции перевода строки формата в массив.  <br /></td></tr>
+<tr class="separator:a444c4e0231eb613abc168eb292d36ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18dbcea3527cb1b3fdb22f77408fa0ea" id="r_a18dbcea3527cb1b3fdb22f77408fa0ea"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modify_8cpp.html#a18dbcea3527cb1b3fdb22f77408fa0ea">ConvertToVector</a> (const char *Input)</td></tr>
+<tr class="memdesc:a18dbcea3527cb1b3fdb22f77408fa0ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вариация перегрузки функции перевода строки формата в массив.  <br /></td></tr>
+<tr class="separator:a18dbcea3527cb1b3fdb22f77408fa0ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a738c2424f334023675c0eddecfeb734c" id="r_a738c2424f334023675c0eddecfeb734c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modify_8cpp.html#a738c2424f334023675c0eddecfeb734c">ConvertToVector</a> (const std::string &amp;Input)</td></tr>
+<tr class="memdesc:a738c2424f334023675c0eddecfeb734c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вариация перегрузки функции перевода строки формата в массив.  <br /></td></tr>
+<tr class="separator:a738c2424f334023675c0eddecfeb734c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3ff59b01915260562b702d197f1e97" id="r_a1d3ff59b01915260562b702d197f1e97"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modify_8cpp.html#a1d3ff59b01915260562b702d197f1e97">ConvertToString</a> (const std::vector&lt; int &gt; &amp;Numbers, const std::string ArrName)</td></tr>
+<tr class="memdesc:a1d3ff59b01915260562b702d197f1e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Фунция перевода массива чисел в строку формата toml.  <br /></td></tr>
+<tr class="separator:a1d3ff59b01915260562b702d197f1e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="a81e903fec340d93cdd62cac5ec131e00" name="a81e903fec340d93cdd62cac5ec131e00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81e903fec340d93cdd62cac5ec131e00">&#9670;&#160;</a></span>CheckExpression()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CheckExpression </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>Line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>EqualIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>LastInd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция для проверки строки на соответствие формату. </p>
+<p>Эта функция принимает строку и проверяет ее на соответвией формату int = int указанному в индивидуальном задании.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Line</td><td>Проверяемая строка. </td></tr>
+    <tr><td class="paramname">EqualIndex</td><td>Индекс знака равенства в строке </td></tr>
+    <tr><td class="paramname">LastInd</td><td>Индекс предыдущего элемента, который должен быть на 1 меньше нового </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает True при верном формате, False при неверном. </dd></dl>
+
+</div>
+</div>
+<a id="aa23e26efe13de19eb840b86069d8048a" name="aa23e26efe13de19eb840b86069d8048a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa23e26efe13de19eb840b86069d8048a">&#9670;&#160;</a></span>CheckName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CheckName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>Input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция для проверки строки на соответствие формату. </p>
+<p>Эта функция принимает строку и проверяет ее на соответвией формату [Name] указанному в индивидуальном задании.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Input</td><td>Проверяемая строка. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает True при верном формате, False при неверном. </dd></dl>
+
+</div>
+</div>
+<a id="a1d3ff59b01915260562b702d197f1e97" name="a1d3ff59b01915260562b702d197f1e97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3ff59b01915260562b702d197f1e97">&#9670;&#160;</a></span>ConvertToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ConvertToString </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>Numbers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>ArrName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Фунция перевода массива чисел в строку формата toml. </p>
+<p>Эта функция принимает массив числе и название массива, и возвращает строку формата toml.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Numbers</td><td>Входной массив. </td></tr>
+    <tr><td class="paramname">ArrName</td><td>Имя массива. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка форма std::string формата toml. </dd></dl>
+
+</div>
+</div>
+<a id="a18dbcea3527cb1b3fdb22f77408fa0ea" name="a18dbcea3527cb1b3fdb22f77408fa0ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18dbcea3527cb1b3fdb22f77408fa0ea">&#9670;&#160;</a></span>ConvertToVector() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; int &gt; ConvertToVector </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вариация перегрузки функции перевода строки формата в массив. </p>
+<p>Эта функция принимает указатель на нуль-терменированную строку, и возвращает массив целых чисел исходя из написанного в строке.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Input</td><td>Входная строка. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает массив целых числе формата std::vector. </dd></dl>
+
+</div>
+</div>
+<a id="a444c4e0231eb613abc168eb292d36ca7" name="a444c4e0231eb613abc168eb292d36ca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a444c4e0231eb613abc168eb292d36ca7">&#9670;&#160;</a></span>ConvertToVector() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; int &gt; ConvertToVector </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>Size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вариация перегрузки функции перевода строки формата в массив. </p>
+<p>Эта функция принимает массив символов и размер этого массива, и возвращает массив целых чисел исходя из написанного в строке.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Input</td><td>Входной массив. </td></tr>
+    <tr><td class="paramname">Size</td><td>Размер массива. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает массив целых числе формата std::vector. </dd></dl>
+
+</div>
+</div>
+<a id="a738c2424f334023675c0eddecfeb734c" name="a738c2424f334023675c0eddecfeb734c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a738c2424f334023675c0eddecfeb734c">&#9670;&#160;</a></span>ConvertToVector() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; int &gt; ConvertToVector </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>Input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вариация перегрузки функции перевода строки формата в массив. </p>
+<p>Эта функция принимает строку формата std::string, и возвращает массив целых чисел исходя из написанного в строке.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Input</td><td>Входная строка. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает массив целых числе формата std::vector. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
